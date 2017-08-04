@@ -710,7 +710,7 @@ button {
     letter-spacing: 2px;
     line-height: 1.42857143;
     text-align: center;
-    border: none;
+    border: 1px solid transparent;
     text-transform: uppercase;
     border-radius: 25px;
     -webkit-box-shadow: -1px 4px 5px 4px rgba(216,212,204,0.33);
@@ -719,6 +719,12 @@ button {
     color: #fff;
     background-color: #cda34d;
     cursor: pointer;
+    transition: .4s;
+}
+button:hover {
+  color: #cda34d;
+  background-color: transparent;
+  border: 1px solid #cda34d;
 }
 body {
 	max-width: 1400px;
@@ -793,8 +799,8 @@ nav .menu > li {
 	float: left;
 	position: relative;
 }
-nav .menu li  a {
-	padding: 24px;
+nav .menu li a{
+	   padding: 24px;
     font-size: 13px;
     letter-spacing: 1px;
     text-decoration: none;
@@ -802,7 +808,9 @@ nav .menu li  a {
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+   
 }
+
 .sub-menu {
 	display: none;
 	position: absolute;
@@ -1035,6 +1043,12 @@ nav .menu > li:hover .sub-menu {
 .price .text-price button {
 	margin-top: 2rem;
 	background-color: #d30050;
+  border: 1px solid transparent;
+}
+.price .text-price button:hover {
+  color: #d30050;
+  background-color: transparent;
+  border: 1px solid #d30050;
 }
 
 /****end-price*****/
